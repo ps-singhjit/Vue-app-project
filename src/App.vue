@@ -14,9 +14,11 @@
     </div>
     <!-- Using props to show data -->
     <CustomerComp name="Demodev" age="25" designation="Developer" />
+    <GreetingsComp />
     <!-- Using state to show data -->
     <EmployeeComp />
     <CounterComp />
+    <RegisterComp />
   </div>
 </template>
 
@@ -24,8 +26,16 @@
 import CustomerComp from "@/components/CustomerComp";
 import EmployeeComp from "@/components/EmployeeComp";
 import CounterComp from "@/components/CounterComp";
+import GreetingsComp from "@/components/GreetingsComp";
+import RegisterComp from "@/components/RegisterComp";
 export default {
-  components: { CustomerComp, EmployeeComp, CounterComp },
+  components: {
+    CustomerComp,
+    EmployeeComp,
+    CounterComp,
+    GreetingsComp,
+    RegisterComp,
+  },
 };
 </script>
 

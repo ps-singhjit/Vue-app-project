@@ -72,7 +72,7 @@ export default {
       `);
         this.user = "";
       } else {
-        alert(`Some fiel(s) are blank for registration 🤔
+        alert(`Some field(s) are blank for registration 🤔
         Please provide valid details.`);
       }
     },

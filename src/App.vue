@@ -14,6 +14,7 @@
     </div>
     <!-- Using props to show data -->
     <RegisterComp />
+    <AuthComp />
     <CustomerComp name="Demodev" age="25" designation="Developer" />
     <GreetingsComp />
     <!-- Using state to show data -->
@@ -28,6 +29,7 @@ import EmployeeComp from "@/components/EmployeeComp";
 import CounterComp from "@/components/CounterComp";
 import GreetingsComp from "@/components/GreetingsComp";
 import RegisterComp from "@/components/RegisterComp";
+import AuthComp from "@/components/AuthComp";
 export default {
   components: {
     CustomerComp,
@@ -35,6 +37,7 @@ export default {
     CounterComp,
     GreetingsComp,
     RegisterComp,
+    AuthComp,
   },
 };
 </script>

@@ -1,0 +1,68 @@
+<template >
+  <div class="container mt-4 mb-4">
+    <div class="col-md-6">
+      <div class="row">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <div v-if="isLoggedin">
+              <h3 class="fw-bold text-success">Welcome User</h3>
+              <p class="fst-italic">
+                <b class="text-success">
+                  You are now logged in 😀 Click on Logout button to logout.
+                </b>
+                sit amet consectetur adipisicing elit. Enim totam similique odit
+                facilis nemo sed iusto odio expedita magni quae.
+              </p>
+            </div>
+            <div v-if="!isLoggedin">
+              <h3 class="fw-bold text-warning">Thank You !!</h3>
+              <p class="fst-italic">
+                <b class="text-danger">
+                  You are logged out !! 😋 Click on Login button to login.
+                </b>
+                Enim totam similique odit facilis nemo sed iusto odio expedita
+                magni quae.
+              </p>
+            </div>
+            <button
+              @click="login()"
+              v-if="!isLoggedin"
+              class="btn btn-success m-2"
+            >
+              Login
+            </button>
+            <button
+              @click="logout()"
+              v-if="isLoggedin"
+              class="btn btn-danger m-2"
+            >
+              Logout
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "AuthComp",
+  data: function () {
+    return {
+      isLoggedin: false,
+    };
+  },
+  methods: {
+    login() {
+      this.isLoggedin = true;
+    },
+    logout() {
+      this.isLoggedin = false;
+    },
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+</style>

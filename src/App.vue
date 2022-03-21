@@ -13,12 +13,12 @@
       </div>
     </div>
     <!-- Using props to show data -->
+    <RegisterComp />
     <CustomerComp name="Demodev" age="25" designation="Developer" />
     <GreetingsComp />
     <!-- Using state to show data -->
     <EmployeeComp />
     <CounterComp />
-    <RegisterComp />
   </div>
 </template>
 

@@ -14,6 +14,7 @@
     </div>
     <!-- Using props to show data -->
     <RegisterComp />
+    <UserListComp />
     <AuthComp />
     <CustomerComp name="Demodev" age="25" designation="Developer" />
     <GreetingsComp />
@@ -30,6 +31,7 @@ import CounterComp from "@/components/CounterComp";
 import GreetingsComp from "@/components/GreetingsComp";
 import RegisterComp from "@/components/RegisterComp";
 import AuthComp from "@/components/AuthComp";
+import UserListComp from "@/components/UserListComp";
 export default {
   components: {
     CustomerComp,
@@ -38,6 +40,7 @@ export default {
     GreetingsComp,
     RegisterComp,
     AuthComp,
+    UserListComp,
   },
 };
 </script>

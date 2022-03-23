@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container mt-4">
     <div class="row">
       <div class="col">
         <p class="h3 fw-bold text-success">User List</p>
@@ -16,7 +16,7 @@
       <div v-if="errorMessage">
         <p class="fw-bold text-danger">{{ errorMessage }}</p>
       </div>
-      <div class="row" v-if="!loading && users.length > 0">
+      <div class="row mt-2" v-if="!loading && users.length > 0">
         <div class="col">
           <table class="table table-hover text-center table-striped">
             <thead class="bg-success text-white">
@@ -32,7 +32,13 @@
             <tbody>
               <tr v-for="user in users" :key="user.id">
                 <td>{{ user.id }}</td>
-                <td>{{ user.name }}</td>
+                <td>
+                  <router-link
+                    class="text-decoration-none fw-bold text-success"
+                    :to="'/users/' + user.id"
+                    >{{ user.name }}</router-link
+                  >
+                </td>
                 <td>{{ user.email }}</td>
                 <td>{{ user.company.name }}</td>
                 <td>{{ user.website }}</td>
@@ -75,8 +81,6 @@ export default {
       this.errorMessage = error;
       console.log(error);
     }
-
-    // return response;
   },
 };
 </script>

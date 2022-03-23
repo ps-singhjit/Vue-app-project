@@ -8,4 +8,9 @@ export class UserService
         let dataURL = `http://jsonplaceholder.typicode.com/users`;
         return axios.get(dataURL);
     }
+    static getUserDetails(userId)
+    {
+        let dataURL = `http://jsonplaceholder.typicode.com/users/${userId}`;
+        return axios.get(dataURL);
+    }
 }

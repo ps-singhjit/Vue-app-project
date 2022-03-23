@@ -4,7 +4,7 @@
       <p class="h3 fw-bold text-success">About</p>
     </div>
 
-    <div class="row">
+    <div class="row mt-3 w-50">
       <div class="col">
         <ul class="list-group">
           <li class="list-group-item">

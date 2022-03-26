@@ -16,6 +16,11 @@
             <router-link class="nav-link px-3" to="/users">Users</router-link>
           </li>
           <li class="nav-item">
+            <router-link class="nav-link px-3" to="/employees"
+              >Employees</router-link
+            >
+          </li>
+          <li class="nav-item">
             <router-link class="nav-link px-3" to="/login">Login</router-link>
           </li>
           <li class="nav-item">

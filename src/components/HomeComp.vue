@@ -12,6 +12,9 @@
         </div>
       </div>
     </div>
+    <div class="text-center">
+      <img src="../assets/vuex.png" alt="" />
+    </div>
     <!-- Using props to show data -->
     <CustomerComp name="Demodev" age="25" designation="Developer" />
     <!-- Using state to show data -->

@@ -4,7 +4,8 @@ import UserListComp from '@/components/UserListComp'
 import RegisterComp from '@/components/RegisterComp'
 import AuthComp from '@/components/AuthComp'
 import GreetingsComp from '@/components/GreetingsComp'
-import CounterComp from '@/components/CounterComp'
+// import CounterComp from '@/components/CounterComp'
+import VuexCounterComp from '@/components/Vuex/VuexCounterComp'
 import HomeComp from '@/components/HomeComp'
 import UserDetailsComp from '@/components/UserDetailsComp'
 
@@ -47,7 +48,7 @@ const routes = [
   {
     path: '/counter',
     name: 'CounterComp',
-    component: CounterComp,
+    component: VuexCounterComp,
   },
   {
     path: '/about',

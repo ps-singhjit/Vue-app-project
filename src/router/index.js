@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import UserListComp from '@/components/UserListComp'
+// import UserListComp from '@/components/UserListComp'
+import VuexUserListComp from '@/components/Vuex/VuexUserListComp'
 import RegisterComp from '@/components/RegisterComp'
 import AuthComp from '@/components/AuthComp'
 import GreetingsComp from '@/components/GreetingsComp'
@@ -9,7 +10,7 @@ import VuexCounterComp from '@/components/Vuex/VuexCounterComp'
 import VuexEmployeeComp from '@/components/Vuex/VuexEmployeeComp'
 
 import HomeComp from '@/components/HomeComp'
-import UserDetailsComp from '@/components/UserDetailsComp'
+import VuexUserDetailsComp from '@/components/Vuex/VuexUserDetailsComp'
 
 const routes = [
   {
@@ -30,12 +31,12 @@ const routes = [
   {
     path: '/users',
     name: 'UserListComp',
-    component: UserListComp,
+    component: VuexUserListComp,
   },
   {
     path: '/users/:userId',
     name: 'UserDetailsComp',
-    component: UserDetailsComp,
+    component: VuexUserDetailsComp,
   },
   {
     path: '/login',

@@ -4,7 +4,7 @@ import HomeView from '../views/HomeView.vue'
 import VuexUserListComp from '@/components/Vuex/VuexUserListComp'
 import VuexRegisterComp from '@/components/Vuex/VuexRegisterComp'
 import VuexAuthComp from '@/components/Vuex/VuexAuthComp'
-import GreetingsComp from '@/components/GreetingsComp'
+import VuexGreetingsComp from '@/components/Vuex/VuexGreetingsComp'
 // import CounterComp from '@/components/CounterComp'
 import VuexCounterComp from '@/components/Vuex/VuexCounterComp'
 import VuexEmployeeComp from '@/components/Vuex/VuexEmployeeComp'
@@ -46,7 +46,7 @@ const routes = [
   {
     path: '/greet',
     name: 'GreetingsComp',
-    component: GreetingsComp,
+    component: VuexGreetingsComp,
   },
   {
     path: '/counter',

@@ -49,18 +49,11 @@
 import { mapGetters } from "vuex";
 export default {
   name: "VuexAuthComp",
-  // data: function () {
-  //   return {
-  //     isLoggedin: false,
-  //   };
-  // },
   methods: {
     login() {
-      // this.isLoggedin = true;
       this.$store.dispatch("authModule/userLogIn");
     },
     logout() {
-      // this.isLoggedin = false;
       this.$store.dispatch("authModule/userLogOut");
     },
   },

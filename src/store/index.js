@@ -5,6 +5,7 @@ import userModule from './modules/user.module';
 import userdetailModule from './modules/userdetail.module';
 import registerModule from './modules/register.module';
 import authModule from './modules/auth.module';
+import greetModule from './modules/greet.module';
 
 export default createStore({
   state: {
@@ -14,6 +15,7 @@ export default createStore({
     userDetailState: userdetailModule.state,
     registerState: registerModule.state,
     authState: authModule.state,
+    greetState: greetModule.state,
   },
   getters: {
     getCounterState: function (state)
@@ -39,7 +41,11 @@ export default createStore({
     getAuthState: function (state)
     {
       return state.authState.auth
-    }
+    },
+    getGreetState: function (state)
+    {
+      return state.greetState.wish
+    },
   },
   modules: {
     counterModule,
@@ -47,7 +53,8 @@ export default createStore({
     userModule,
     userdetailModule,
     registerModule,
-    authModule
+    authModule,
+    greetModule
   },
   mutations: {
   },

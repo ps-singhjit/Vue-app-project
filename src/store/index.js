@@ -3,6 +3,7 @@ import counterModule from './modules/counter.module';
 import employeeModule from './modules/employee.module';
 import userModule from './modules/user.module';
 import userdetailModule from './modules/userdetail.module';
+import registerModule from './modules/register.module';
 
 export default createStore({
   state: {
@@ -10,6 +11,7 @@ export default createStore({
     employeeState: employeeModule.state,
     userState: userModule.state,
     userDetailState: userdetailModule.state,
+    registerState: registerModule.state,
   },
   getters: {
     getCounterState: function (state)
@@ -27,13 +29,18 @@ export default createStore({
     getUserDetailState: function (state)
     {
       return state.userDetailState.userList;
-    }
+    },
+    getRegisterState: function (state)
+    {
+      return state.registerState.userCreds;
+    },
   },
   modules: {
     counterModule,
     employeeModule,
     userModule,
-    userdetailModule
+    userdetailModule,
+    registerModule
   },
   mutations: {
   },

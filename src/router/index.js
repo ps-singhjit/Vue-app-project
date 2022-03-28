@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 // import UserListComp from '@/components/UserListComp'
 import VuexUserListComp from '@/components/Vuex/VuexUserListComp'
-import RegisterComp from '@/components/RegisterComp'
+import VuexRegisterComp from '@/components/Vuex/VuexRegisterComp'
 import AuthComp from '@/components/AuthComp'
 import GreetingsComp from '@/components/GreetingsComp'
 // import CounterComp from '@/components/CounterComp'
@@ -26,7 +26,7 @@ const routes = [
   {
     path: '/register',
     name: 'RegisterComp',
-    component: RegisterComp,
+    component: VuexRegisterComp,
   },
   {
     path: '/users',

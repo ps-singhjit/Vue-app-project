@@ -4,6 +4,7 @@ import employeeModule from './modules/employee.module';
 import userModule from './modules/user.module';
 import userdetailModule from './modules/userdetail.module';
 import registerModule from './modules/register.module';
+import authModule from './modules/auth.module';
 
 export default createStore({
   state: {
@@ -12,6 +13,7 @@ export default createStore({
     userState: userModule.state,
     userDetailState: userdetailModule.state,
     registerState: registerModule.state,
+    authState: authModule.state,
   },
   getters: {
     getCounterState: function (state)
@@ -34,13 +36,18 @@ export default createStore({
     {
       return state.registerState.userCreds;
     },
+    getAuthState: function (state)
+    {
+      return state.authState.auth
+    }
   },
   modules: {
     counterModule,
     employeeModule,
     userModule,
     userdetailModule,
-    registerModule
+    registerModule,
+    authModule
   },
   mutations: {
   },

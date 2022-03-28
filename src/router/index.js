@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue'
 // import UserListComp from '@/components/UserListComp'
 import VuexUserListComp from '@/components/Vuex/VuexUserListComp'
 import VuexRegisterComp from '@/components/Vuex/VuexRegisterComp'
-import AuthComp from '@/components/AuthComp'
+import VuexAuthComp from '@/components/Vuex/VuexAuthComp'
 import GreetingsComp from '@/components/GreetingsComp'
 // import CounterComp from '@/components/CounterComp'
 import VuexCounterComp from '@/components/Vuex/VuexCounterComp'
@@ -41,7 +41,7 @@ const routes = [
   {
     path: '/login',
     name: 'AuthComp',
-    component: AuthComp,
+    component: VuexAuthComp,
   },
   {
     path: '/greet',
